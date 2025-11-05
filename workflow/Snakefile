@@ -1,0 +1,13 @@
+
+include: "rules/common.smk"
+include: "rules/seqkit.smk"
+include: "rules/busco.smk"
+include: "rules/fastp.smk"
+include: "rules/fastqc.smk"
+include: "rules/salmon_index.smk"
+include: "rules/salmon_quant.smk"
+include: "rules/multiqc.smk"
+
+rule all:
+    input:
+        "results/multiqc.html"

@@ -1,0 +1,5 @@
+
+# path to sample sheet csv with columns for ID,forward,reverse
+samples: sample_list_Esup.csv
+
+reference: reference_transcriptomes/transcripts.fasta

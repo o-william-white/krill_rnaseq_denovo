@@ -1,0 +1,18 @@
+
+executor: slurm
+jobs: 40
+use-conda: true
+rerun-incomplete: true
+printshellcmds: true 
+
+default-resources:
+    slurm_account: cropdiv-acc
+    slurm_partition: short
+    mem: "4GB"
+    runtime: "6h"
+
+set-resources:
+    busco:
+        slurm_partition: medium
+        mem: "50G"
+        runtime: "24h"

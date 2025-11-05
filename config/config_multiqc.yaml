@@ -1,0 +1,10 @@
+extra_fn_clean_exts:
+  - "_R1"
+  - "_R2"
+  - "_fastp"
+  - "_report"
+
+fastp:
+  s_name_filenames: true
+
+show_analysis_paths: false
