@@ -16,8 +16,8 @@ rule multiqc:
             sample=sample_data.index.tolist(),
         ),
         expand(
-            "results/salmon/{sample}/aux_info/meta_info.json",
-            sample=sample_data.index.tolist(),
+            "results/salmon/{group}/aux_info/meta_info.json",
+            group=dict_groups.keys(),
         ),
         config="config/config_multiqc.yaml",
     output:

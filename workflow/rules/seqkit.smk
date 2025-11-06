@@ -22,7 +22,7 @@ rule seqkit_fx2tab:
     params:
         command="fx2tab",
         extra="--name --length --gc",
-    threads: 2
+    threads: 8
     wrapper:
         "v7.6.0/bio/seqkit"
 

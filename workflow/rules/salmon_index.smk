@@ -23,7 +23,7 @@ rule salmon_index:
         directory("results/salmon_index"), # need to specifiy output direcotry here so it can be picked up by salmon quant
     log:
         "logs/salmon_index.log",
-    threads: 2
+    threads: 8
     params:
         # optional parameters
         extra="",

@@ -10,6 +10,7 @@ default-resources:
     slurm_partition: short
     mem: "4GB"
     runtime: "6h"
+    cpus_per_task: 8
 
 set-resources:
     busco:

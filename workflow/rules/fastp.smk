@@ -11,7 +11,7 @@ rule fastp:
     log:
         "logs/fastp/{sample}.log"
     params:
-        adapters="--adapter_sequence ACGGCTAGCTA --adapter_sequence_r2 AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC",
-    threads: 2
+        adapters="--adapter_sequence ACGGCTAGCTA --adapter_sequence_r2 AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC --trim_poly_g --trim_poly_x",
+    threads: 8
     wrapper:
         "v7.1.0/bio/fastp"

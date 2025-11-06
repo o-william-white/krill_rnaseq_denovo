@@ -18,3 +18,12 @@ def get_fastq(wildcards):
     fwd = sample_data.loc[wildcards.sample, "forward"]
     rev = sample_data.loc[wildcards.sample, "reverse"]
     return [fwd, rev]
+
+# dictionary of groups to sample ids
+dict_groups = sample_data.groupby('group')['id'].apply(list).to_dict()
+
+def get_technical_replicates_forward(wildcards):
+    return [ f'results/fastp/{x}_R1.fastq' for x in dict_groups[wildcards.group]]
+
+def get_technical_replicates_reverse(wildcards):
+    return [ f'results/fastp/{x}_R2.fastq' for x in dict_groups[wildcards.group]]
