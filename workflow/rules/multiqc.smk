@@ -1,8 +1,8 @@
 rule multiqc:
     input:
         "results/busco/short_summary.txt",
-        "results/seqkit/fx2tab_mqc.txt",
         "results/seqkit/stats_mqc.txt",
+        "results/seqkit/fx2tab_mqc.png",
         expand(
             "results/fastp/{sample}_fastp.json",
             sample=sample_data.index.tolist(),

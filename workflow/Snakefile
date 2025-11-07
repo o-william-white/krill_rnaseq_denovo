@@ -1,6 +1,7 @@
 
 include: "rules/common.smk"
 include: "rules/seqkit.smk"
+include: "rules/plot_seqkit.smk"
 include: "rules/busco.smk"
 include: "rules/fastp.smk"
 include: "rules/fastqc.smk"

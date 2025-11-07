@@ -16,7 +16,7 @@ rule seqkit_fx2tab:
     input:
         fastx=reference,
     output:
-        tsv="results/seqkit/fx2tab_mqc.txt",
+        tsv="results/seqkit/fx2tab.txt",
     log:
         "logs/seqkit/fx2tab.log",
     params:
