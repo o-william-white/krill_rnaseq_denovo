@@ -1,15 +1,12 @@
 rule multiqc:
     input:
-        "results/busco/short_summary.txt",
-        "results/seqkit/stats_mqc.txt",
-        "results/seqkit/fx2tab_mqc.png",
         expand(
             "results/fastp/{sample}_fastp.json",
             sample=sample_data.index.tolist(),
-        ), 
+        ),
         expand(
-           "results/fastqc/{sample}_R1.html",
-           sample=sample_data.index.tolist(),
+            "results/fastqc/{sample}_R1.html",
+            sample=sample_data.index.tolist(),
         ),
         expand(
             "results/fastqc/{sample}_R2.html",
@@ -23,9 +20,9 @@ rule multiqc:
     output:
         "results/multiqc.html",
         directory("results/multiqc_data"),
-    params:
-        extra="--verbose",  # Optional: extra parameters for multiqc.
     log:
         "logs/multiqc.log",
+    params:
+        extra="--verbose",  # Optional: extra parameters for multiqc.
     wrapper:
         "v7.5.0/bio/multiqc"

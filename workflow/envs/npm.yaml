@@ -1,7 +1,0 @@
-hannels:
-  - conda-forge
-  - bioconda
-dependencies:
-  - numpy =2.3.4
-  - pandas =2.3.3
-  - matplotlib =3.10.7

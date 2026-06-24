@@ -13,7 +13,6 @@ default-resources:
     cpus_per_task: 8
 
 set-resources:
-    busco:
-        slurm_partition: medium
-        mem: "50G"
-        runtime: "24h"
+    salmon_quant:
+        mem: "10G"
+
