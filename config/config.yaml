@@ -3,7 +3,7 @@
 samples: sample_list_Ecry.csv
 
 # path to reference fasta file for alignment
-reference: /mnt/shared/projects/nhm/owhite/krill_transcriptome_assembly_Ecry/results/trinity/trinity_Ecry.Trinity.fasta
+reference: /home/owhite/scratch/private/krill_transcriptome_assembly_Ecry/results/trinity/trinity_Ecry.Trinity.fasta
 
 # path to salmon index
-salmon_index: "/mnt/shared/projects/nhm/owhite/krill_transcriptome_assembly_Ecry/results/salmon_index/"
+salmon_index: "/home/owhite/scratch/private/krill_transcriptome_assembly_Ecry/results/salmon_index/"
