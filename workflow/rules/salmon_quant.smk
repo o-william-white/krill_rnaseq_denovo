@@ -16,7 +16,7 @@ rule salmon_quant:
     threads: 8
     shell:
         """
-        salmon quant \
+        RUST_BACKTRACE=full salmon quant \
             -i {input.index} \
             -l A \
             -1 {input.r1} \
